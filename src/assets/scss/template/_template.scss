@@ -16,26 +16,121 @@ html,
   border-top: 8px solid #663399;
 }
 
-// Full Width Headers
+// Header
+// ------
+
 .header {
-  background: #8a8a8a;
-}
-
-.header .columns {
-  padding-bottom: 0;
-}
-
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .wrapper-inner {
+  background: $header-background;
   padding: 20px;
+  margin-bottom: 20px !important;
+
+  &__columns {
+    padding-bottom: 0 !important; 
+  }
+
+  &__wrapper-inner {
+    padding: 10px 15px;
+  }
+
+  &__container {
+    background-color: transparent !important;
+  }
+
+  &__logo {
+    max-width: 260px;
+    width: 100%;
+  }
 }
 
-.header .container {
-  background: transparent;
+// Container
+// ---------
+
+.container {
+  background-color: #fff;
+
+  &_transp {
+    background-color: transparent;
+  }
+}
+
+// Main-content
+table.main-container {
+  margin-top: 20px;
+}
+
+// Footer
+// ------
+
+.footer {
+  margin-top: 20px !important;
+}
+
+.footer-text {
+  font-size: 13px;
+}
+
+// Buttons
+table.button {
+
+  &.footer-button {
+    display: inline-block;
+
+    table {
+
+      td {
+
+        a {
+          width: 100px;
+          padding-left: 0;
+          padding-right: 0;
+          font-size: 12px;
+          text-align: center;
+          color: #333;
+        }
+      }
+    }
+
+    &:hover {
+
+      table  {
+
+        td {
+
+          a {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+
+  &.footer-button-white {
+
+    table {
+      
+      td {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &.footer-button-grey {
+
+    table {
+      
+      td {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+// Columns
+th,
+td {
+  .footer-columns {
+    padding-bottom: 0;
+  }
 }
 
 // Social Media
@@ -56,4 +151,90 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+
+// Custom
+body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.header-block {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+.header-block img {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  width: 100%;
+}
+.title {
+  color: #9c1318;
+  font-weight: bold;
+  font-size: 20px;
+}
+.paddingMainText {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+
+}
+.paddingMainText2 {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+
+}
+.paddingMainText p {
+  margin: 0;
+  line-height: 1.5;
+}
+.paddingMainText2 p {
+  margin: 0;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.buttonStyle {
+  display: block; 
+  max-width: 200px;
+  height: auto;
+  width: auto;
+  background-color: #9c1318;
+  color: #ffffff !important;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0;
+}
+.paddingMainText p a {
+  color: #9c1318 !important;
+  border-bottom: 1px solid #9c1318;
+}
+.title-small {
+  color: #9c1318;
+  font-weight: bold;
+}
+.background-block {
+  background: #234414 url(https://files.doktornarabote.ru/Anastasiya/Mails/event/footballField.png) no-repeat !important;
+}
+.fontWeight {
+  font-weight: bold;
+}
+.background-block .paddingMainText p {
+  color: #ffffff !important;
+
+}
+.color-grey {
+  max-width: 150px;
+  width: 100%;
+  border-top: 3px dashed #9c1318;
+}
+.linkContact {
+  color: #9c1318 !important;
+}
+.paddingMainText img {
+  width: 20px !important;
+}
+.text-rpaheader {
+  font-size: 12px;
 }

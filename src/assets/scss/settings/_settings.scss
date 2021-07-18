@@ -7,10 +7,11 @@
 //   2. Grid
 //   3. Block Grid
 //   4. Typography
-//   5. Button
-//   6. Callout
-//   7. Menu
-//   8. Thumbnail
+//   5. Header
+//   6. Button
+//   7. Callout
+//   8. Menu
+//   9. Thumbnail
 
 
 // 1. Global
@@ -90,6 +91,12 @@ $anchor-color-visited: $anchor-color;
 $anchor-color-hover: darken($primary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
+
+// 5. Header
+// ---------
+
+$header-background: #0b7bb5;
+// $header__columns:
 
 // 5. Button
 // ---------
