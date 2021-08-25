@@ -1,240 +1,436 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: #E5E5E5 !important;
 }
 
-.container.header {
-  background: #f3f3f3;
-}
+// .body-drip {
+//   border-top: 8px solid #663399;
+// }
 
-.body-drip {
-  border-top: 8px solid #663399;
-}
+// // Header
+// // ------
 
-// Header
-// ------
+// .header {
+//   background: $header-background;
+//   padding: 20px;
+//   margin-bottom: 20px !important;
 
-.header {
-  background: $header-background;
-  padding: 20px;
-  margin-bottom: 20px !important;
+//   &__columns {
+//     padding-bottom: 0 !important;
+//   }
 
-  &__columns {
-    padding-bottom: 0 !important; 
-  }
+//   &__wrapper-inner {
+//     padding: 10px 15px;
+//   }
 
-  &__wrapper-inner {
-    padding: 10px 15px;
-  }
+//   &__container {
+//     background-color: transparent !important;
+//   }
 
-  &__container {
-    background-color: transparent !important;
-  }
+//   &__logo {
+//     max-width: 260px;
+//     width: 100%;
+//   }
+// }
 
-  &__logo {
-    max-width: 260px;
-    width: 100%;
-  }
-}
+// // Container
+// // ---------
 
-// Container
-// ---------
+// .container {
+//   background-color: #fff;
 
-.container {
-  background-color: #fff;
+//   &_transp {
+//     background-color: transparent;
+//   }
+// }
 
-  &_transp {
-    background-color: transparent;
-  }
-}
+// // Main-content
+// table.main-container {
+//   margin-top: 20px;
+// }
 
-// Main-content
-table.main-container {
-  margin-top: 20px;
-}
+// // Footer
+// // ------
 
-// Footer
-// ------
+// .footer {
+//   margin-top: 20px !important;
+// }
 
-.footer {
-  margin-top: 20px !important;
-}
+// .footer-text {
+//   font-size: 13px;
+// }
 
-.footer-text {
-  font-size: 13px;
-}
+// // Buttons
+// table.button {
+//   &.footer-button {
+//     display: inline-block;
 
-// Buttons
-table.button {
+//     table {
+//       td {
+//         a {
+//           width: 100px;
+//           padding-left: 0;
+//           padding-right: 0;
+//           font-size: 12px;
+//           text-align: center;
+//           color: #333;
+//         }
+//       }
+//     }
 
-  &.footer-button {
-    display: inline-block;
+//     &:hover {
+//       table {
+//         td {
+//           a {
+//             color: #333;
+//           }
+//         }
+//       }
+//     }
+//   }
 
-    table {
+//   &.footer-button-white {
+//     table {
+//       td {
+//         background-color: #fff;
+//       }
+//     }
+//   }
 
-      td {
+//   &.footer-button-grey {
+//     table {
+//       td {
+//         background-color: #ccc;
+//       }
+//     }
+//   }
+// }
 
-        a {
-          width: 100px;
-          padding-left: 0;
-          padding-right: 0;
-          font-size: 12px;
-          text-align: center;
-          color: #333;
-        }
-      }
-    }
+// // Columns
+// th,
+// td {
+//   .footer-columns {
+//     padding-bottom: 0;
+//   }
+// }
 
-    &:hover {
+// .wrapper.secondary {
+//   background: #f3f3f3;
+// }
+//new custom
+$font-helvetica: Helvetica, sans-serif;
+$font-times: 'Times New Roman', sans-serif;
+$color-white: #ffffff;
+$color-dark-blue: #23333C;
+$color-blue: #195374;
+$color-neon-blue: #2D4EA4;
+$color-light-blue: #297098;
+$color-heaven: #D4EDF4;
+$color-footer: #E7F2FF;
+$color-yellow: #FFD99F;
+$color-orange: #CF8642;
+$color-green: #337E0F;
+$color-red: #D1262F;
+$color-pink: #A21AC4;
+$color-grey: #8793A5;
+$size-24: 24px;
+$size-20: 20px;
+$size-16: 16px;
+$size-12: 12px;
+$size-10: 10px;
 
-      table  {
-
-        td {
-
-          a {
-            color: #333;
-          }
-        }
-      }
-    }
-  }
-
-  &.footer-button-white {
-
-    table {
-      
-      td {
-        background-color: #fff;
-      }
-    }
-  }
-
-  &.footer-button-grey {
-
-    table {
-      
-      td {
-        background-color: #ccc;
-      }
-    }
-  }
-}
-
-// Columns
+body,
+table.body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
 th,
-td {
-  .footer-columns {
-    padding-bottom: 0;
+a {
+  font-family: $font-times !important;
+  font-size: $size-16;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-dark-blue;
+  line-height: 1.5;
+}
+.spacer,
+.spacer * {
+  background-color: inherit;
+}
+.container-body {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  background-color: $color-white;
+}
+.container {
+  background-color: $color-white;
+
+  &._bg {
+    background-image: url(https://pravit.ru/freelance/merck_3/assets/img/bg-royal.png);
+    background-repeat: repeat;
+  }
+  .row {
+    &:not(.collapse) {
+      .columns {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
   }
 }
+img {
+  width: 100% !important;
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+  &.line {
+    max-width: 337px;
+  }
+  &.flag {
+    max-width: 73px;
+  }
 }
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
+p {
+  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+a.not-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
 }
-
-.wrapper.secondary {
-  background: #f3f3f3;
+.text {
+  &._comma {
+    font-size: 100px;
+    font-weight: normal;
+  }
+  &._lg {
+    font-size: $size-24;
+    font-weight: 700;
+  }
+  &._md {
+    font-size: $size-20;
+    line-height: 1.3;
+    font-weight: bold;
+  }
+  &._sm {
+    font-size: $size-12;
+    color: $color-grey;
+    font-family: $font-helvetica !important;
+  }
+  &._small {
+    font-size: $size-10;
+    font-family: $font-helvetica !important;
+    color: $color-grey;
+  }
+  &-transform {
+    text-transform: uppercase;
+  }
+  &-white {
+    color: $color-white;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-link {
+    font-size: inherit !important;
+    text-decoration: underline;
+    color: inherit !important;
+  }
+  &-pink {
+    color: $color-pink;
+  }
+  &-red {
+    color: $color-red;
+  }
+  &-green {
+    color: $color-green;
+  }
+  &-neon-blue {
+    color: $color-neon-blue;
+  }
+  &-blue {
+    color: $color-blue;
+  }
+  &-grey {
+    color: $color-grey;
+  }
 }
-
-
-// Custom
-body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
-  font-family: Arial, Helvetica, sans-serif
+.text-margin + .text-margin {
+  margin-top: 10px !important;
 }
-
-.header-block {
-  border-top-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
+.item-center {
+  margin: 0 auto !important;
 }
-.header-block img {
-  border-top-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
-  width: 100%;
-}
-.title {
-  color: #9c1318;
-  font-weight: bold;
-  font-size: 20px;
-}
-.paddingMainText {
-  padding-left: 10% !important;
-  padding-right: 10% !important;
-
-}
-.paddingMainText2 {
-  padding-left: 5% !important;
-  padding-right: 5% !important;
-
-}
-.paddingMainText p {
-  margin: 0;
-  line-height: 1.5;
-}
-.paddingMainText2 p {
-  margin: 0;
-  line-height: 1.5;
-  color: #ffffff;
-}
-.buttonStyle {
-  display: block; 
-  max-width: 200px;
-  height: auto;
-  width: auto;
-  background-color: #9c1318;
-  color: #ffffff !important;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 13px;
+center {
   text-align: center;
-  border-radius: 30px;
-  margin: 0;
 }
-.paddingMainText p a {
-  color: #9c1318 !important;
-  border-bottom: 1px solid #9c1318;
-}
-.title-small {
-  color: #9c1318;
-  font-weight: bold;
-}
-.background-block {
-  background: #234414 url(https://files.doktornarabote.ru/Anastasiya/Mails/event/footballField.png) no-repeat !important;
-}
-.fontWeight {
-  font-weight: bold;
-}
-.background-block .paddingMainText p {
-  color: #ffffff !important;
+.item-inline {
+  text-align: center;
 
+  & > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+
+    &:first-child {
+      padding-right: 20px;
+    }
+  }
 }
-.color-grey {
-  max-width: 150px;
-  width: 100%;
-  border-top: 3px dashed #9c1318;
+.item-radius {
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid $color-orange;
+
+  &._white {
+    background-color: $color-white;
+  }
+  &._yellow {
+    background: $color-yellow;
+  }
 }
-.linkContact {
-  color: #9c1318 !important;
+.item-information {
+  background-color: $color-white;
+  border: 1px solid #CCCCCC;
+  padding: 16px;
 }
-.paddingMainText img {
-  width: 20px !important;
+table.table {
+  vertical-align: top;
+
+  td {
+    padding: 1%;
+  }
+
+  &.table-left {
+    tr > td:first-child {
+      width: 81px;
+    }
+  }
+  &.table-right {
+    tr > td:last-child {
+      width: 81px;
+    }
+  }
 }
-.text-rpaheader {
-  font-size: 12px;
+table.list {
+  vertical-align: middle;
+  td {
+    padding: 2%;
+    padding-bottom: 15px;
+    vertical-align: middle;
+  }
+  tr > td:first-child {
+    width: 36px;
+  }
+  p {
+    line-height: 1 !important;
+  }
+  img {
+    margin-top: 2px;
+  }
+}
+#logo {
+  max-width: 176px;
+}
+.section-1 {
+  background-color: $color-heaven;
+}
+.section-3 {
+  .item-inline {
+    &>div:first-child {
+      max-width: 353px;
+    }
+  }
+}
+.section-4 {
+  .item-paper {
+    background-color: $color-yellow;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    .item-inline {
+      &>div:first-child {
+        max-width: 184px;
+      }
+      &>div:last-child {
+        max-width: 286px;
+      }
+    }
+
+    table.table {
+      &.table-left {
+        tr > td:first-child {
+          width: 42px;
+        }
+      }
+    }
+  }
+}
+.section-7 {
+  .item-inline {
+    &>div:first-child {
+      max-width: 163px;
+    }
+    &>div:last-child {
+      max-width: 284px;
+    }
+  }
+}
+.section-8 {
+  .item-inline {
+    &>div:first-child {
+      max-width: 277px;
+    }
+    &>div:last-child {
+      max-width: 205px;
+    }
+  }
+}
+.section-9 {
+  .item-inline {
+    &>div:first-child {
+      max-width: 154px;
+    }
+    &>div:last-child {
+      max-width: 327px;
+    }
+  }
+}
+.section-12 {
+  .item-inline {
+    &>div:first-child {
+      max-width: 237px;
+    }
+    &>div:last-child {
+      max-width: 256px;
+    }
+  }
+}
+.section-14 {
+  background-color: $color-light-blue;
+  .item-inline {
+    &>div:first-child {
+      max-width: 295px;
+    }
+    &>div:last-child {
+      max-width: 260px;
+    }
+  }
+}
+.section-15 {
+  background-color: $color-footer;
+
+  p {
+    font-family: $font-helvetica !important;
+  }
 }
